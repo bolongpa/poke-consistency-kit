@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poke-consistency-kit"
+version = "1.0.0"
+description = "Gen-1 Pokemon ontology + knowledge graph + visual-consistency toolkit for AI creators"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Bolong Pan" }]
+requires-python = ">=3.10"
+dependencies = ["networkx", "requests"]
+
+[project.scripts]
+poke-kg = "poke_kg.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["poke_kg*"]
