@@ -1,5 +1,9 @@
 # poke-consistency-kit
 
+[![CI](https://github.com/bolongpa/poke-consistency-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/bolongpa/poke-consistency-kit/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
+
 A Gen-1 Pokémon ontology + knowledge graph + **visual-consistency toolkit for AI creators**.
 
 AI image/video generators routinely mangle Pokémon anatomy — Pikachu with wings, Charizard with the wrong tail, Gyarados drawn with legs. This toolkit doesn't pretend a knowledge graph can reach into a diffusion model and fix pixels. Instead it provides the three things that *do* help: a curated visual ontology, positive-only prompt construction, and a VLM-based verification loop.
@@ -164,6 +168,25 @@ poke-consistency-kit/
 - Multi-view consistency checks (front/side/back sprite comparison)
 - Gen-2+ expansion behind a `--gen` flag
 - LoRA dataset export: organized canonical image sets per Pokémon/form
+
+## Evaluation status
+
+No VLM accuracy numbers are claimed anywhere in this project — the verifier reports what the vision model said, nothing more (see Data sources & canon notes). Demo outputs use the deterministic `FakeVLM`.
+
+## Citation
+
+If you use this project in academic or technical work, please cite it as:
+
+```bibtex
+@software{pan2026pokeconsistencykit,
+  author = {Bolong Pan},
+  title = {poke-consistency-kit: Gen-1 Pok{\'e}mon ontology and visual-consistency toolkit},
+  year = {2026},
+  url = {https://github.com/bolongpa/poke-consistency-kit}
+}
+```
+
+A Zenodo DOI will be added here once minted.
 
 ## License
 
