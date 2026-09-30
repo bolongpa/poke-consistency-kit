@@ -182,11 +182,12 @@ If you use this project in academic or technical work, please cite it as:
   author = {Bolong Pan},
   title = {poke-consistency-kit: Gen-1 Pok{\'e}mon ontology and visual-consistency toolkit},
   year = {2026},
-  url = {https://github.com/bolongpa/poke-consistency-kit}
+  url = {https://github.com/bolongpa/poke-consistency-kit},
+  doi = {10.5281/zenodo.23034534}
 }
 ```
 
-A Zenodo DOI will be added here once minted.
+DOI: [10.5281/zenodo.23034534](https://doi.org/10.5281/zenodo.23034534)
 
 ## License
 
